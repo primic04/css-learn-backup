@@ -1,0 +1,116 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>CSS3 lerning-web-dev</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>ou ecrit-on le css?</h1>
+            <p>on l'ecrit dans un fichier spécial ayant pour extension .css. C'est la méthode la plus pratique et la plus souple</p>
+            <p>il est inutile d'ouvrir le fichier .css dans le navigateur, il faut toujours ouvrir le fichier avec l'extansion .html, il fera automatiquement appel au fichier style.css avec la ligne de code <br> <p style="color: red;">( link rel="stylesheet" href="style.css" )</p></p>
+        </div>
+
+        <div>
+            <h1>appliquer un style: sélectionner une balise</h1>
+            <p>dans un code CSS3 on trouve trois éléments différents</p>
+            <ol>
+                <li>des noms de balises</li>
+                    <ul>
+                        <li>on ecrit le nom de la balise que l'on souhaite modifié l'apparence <p style="color: red;">Ex: la balise(< p >) pour la modifier enlever les < > il ne reste que les lettre de la balise </p></li>
+                    </ul>
+                <li>des propriété CSS</li>
+                    <ul>
+                        <li>"les effets de style" de la page sont rangé dans des propriétées <p style="color: red;">Ex: la propriété color permet d'indiquer la couleurs du texte, font-size précise la taille du texte etc ...</p></li>
+                    </ul>
+                <li>des valeurs</li>
+                    <ul>
+                        <li>pour chaque propriété CSS on doit indiquer une valeur. <p style="color: red;">Ex: la propriété "color", il faut indiquer le nom de la couleur en valeur; pour la propriété font-size , on indique la taille que l'on souhaite en valeur</p></li>
+                    </ul>
+            </ol>
+        </div>
+
+        <div class="value">
+            <p>EX:</p> <br>
+            <p>balise 1</p>
+        
+            <p>{</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété1 : valeur1</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété2 : valeur2</p>                
+            <p>}</p>
+            <p>balise 2</p>
+            <p>{</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété1 : valeur1</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété2 : valeur2</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété3 : valeur3</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété4 : valeur4</p>
+            <p>}</p>
+            <p>balise 3</p>
+            <p>{</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété1 : valeur1</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété2 : valeur2</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété3 : valeur3</p>
+            <p>}</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété1 : valeur1</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété2 : valeur2</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété3 : valeur3</p>
+            <p>&emsp;&emsp;&emsp;&emsp; propriété4 : valeur4</p>
+        </div>
+
+        <div>
+            <h2>En résumé</h2>
+        <ol>
+            <li>on écrit le nom de la balise sans les < > </li>
+            <li>on ouvre des accolades { } </li>
+            <li>à l'interieur, ajouter les propriétées</li>
+            <li>suivi de la propriété on met les : (deux point)</li>
+            <li>suite au deux points on entre la valeur de la propriété qu'on veut</li>
+            <p style="color: red;">chacunes des propriétées est suivis du symbole ":" puis de sa valeur et se termine par des points virgule ";"</p>
+            <p style="color: yellow; font-size: 30px;"><strong><em>on peut mettre entre les accolade autant de propriété suivis de sa valeur que l'on veux: PAS DE MAXIMUM</em></strong></p>
+        </ol>
+        </div>
+        <div>
+            <h1>les commentaires en css</h1>
+            <p>les commentaire doivent etre comme suit <p>EX: <p style="color: lightgreen; font-size: 25px;">&emsp;&emsp;&emsp;&emsp; /* ceci est un commentaire */</p></p></p>
+        </div>
+        
+        <div>
+            <h1>Appliquer un style: class et id</h1>
+            <p style="color: yellow; font-size: 20px;">Ces attributs speciaux fonctionnent sur toutes les balises. ces deux attributs sont quasiment identiques.</p>
+            <ol>
+                <li>l'attribut class</li>
+                    <ul>
+                        <p>l'attribut class peut etre associé a n'importe quelle balise, image, paragraphe, titre, etc ...</p>
+                        <li>lorsque vous ajouter l'attribut class a votre balise, c'est fait votre balise est identifier au nom que vous lui avez attribué</li>
+                        <p>et alors vous pourrez reutilisé le nom attribué dans le fichier .css pour l'appeler</p>
+                    </ul>
+                <li>l'attribut id</li>
+                    <ul>
+                        <p>l'attribut id fonctionne exactemment de la même maniere que class</p>
+                        <li>En revenche il ne peux être attribué qu'une seule fois dans tous le code</li>
+                        <p>très pratique pour faire un ancre sur un logo. Nous n'utiliserons l'id que sur des éléments uniques dans la page</p>
+                        <p>si vous utilisé l'id, lorsque vous definirez ses propriétées dans le fichier .css, il faudra précèder son nom par un (#)</p>
+                    </ul>
+            </ol>
+        </div>
+
+        <div>
+            <h1>les balises Universelles</h1>
+            <p>en effet le probleme de l'attribut class , c'est qu'il s'agit d'un attribut donc, que vous ne pouvez en mettre que dans les balises</p>
+            <p>en realité elle sont dites universelle puisqu'elle n'ont aucune signification particulière. elles sont en revanche très importante</p>
+                <ol>
+                    <li>< span >:</li>
+                        <ul>
+                            <li>c'est une balise de type "inline", c'est a dire qu'on la place au sein d'une paragraphe de texte, pour sélectionner certain mot uniquement</li>
+                        </ul>
+                    <li>< div >:</li>
+                        <ul>
+                            <li>c'est une balise de type "block", qui entoure un bloc de texte, comme:<br> < p > et < h1 >, etc ... elle créé automatiquement un retour a la ligne.</li>
+                            <p>div est tres frequemment utilisé dans la construction d'un design</p>
+                        </ul>
+                </ol>
+        </div>
+    </body>
+</html>
